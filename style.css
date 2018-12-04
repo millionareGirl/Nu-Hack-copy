@@ -1,0 +1,140 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700i") format('truetype');
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: extra-bold;
+    src: url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway:700i") format('truetype');
+}
+
+body{
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: Open Sans;
+	font-size: 25px;
+	color: black;
+	background-color: #eeeeee;
+	text-align: left;
+}
+
+#cover {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url('http://hacknu2018.herokuapp.com/imgs/Header-Recovered.jpg');
+    background-position: center top;
+    background-size: cover;
+
+    padding: 0 !important;
+
+    display: flex;
+    justify-content: center;
+}
+
+#cover .Main_header{
+	font-family: Montserrat;
+	font-style: italic;
+    text-align: center;
+    font-size: 10vw;
+    padding: 120px;
+    color: white;
+    display: block;
+}
+
+#cover.reg{
+    font-size: 40px;
+    padding: 16px 24px;
+    margin: auto;
+    background-color: #28A3E0;
+    color: #F5FBFC;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+#wraper{
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: #F9F9F9;
+	padding: 10px;
+	margin-top: 30px;
+	align-items: center;
+}
+
+table{
+	table-layout: fixed;
+	width: 800px;
+	text-align: center;
+	border: 1px solid #ABACAC;
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+td{
+	font-family: 'Open Sans', sans-serif;
+	text-align : left;
+	text-align-last: right;
+	border: 1px solid #ABACAC;
+}
+th{
+	text-align: center;
+	background-color: #28A3E0;
+	color: #F5FBFC;
+}
+
+h2 {
+    color: #F5F8FA;
+    background-color: #2D3236;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+#tasks_header {
+	background-color: #28A3E0;
+	color: #F5FBFC;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+h3{
+	font-weight: bold;
+	text-align:center;
+}
+#O_nas{
+	text-align: left;
+}
+p.about{
+	text-align: left;
+}
+#contacts{
+	table-layout: none;
+	text-align: left;
+	border: 0px;
+}
+
+/*
+
+#header {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 56px;
+    padding: 0 !important;
+    background: var(--main-black);
+}
+
+#header > .Main_Header {
+    display: inline;
+    font-size: 40px;
+    color: var(--light-gray);
+    margin-left: 10%;
+}
+
+#header > .reg {
+    float: right;
+    margin: 6px;
+    padding: 8px 16px;
+    font-size: 20px;
+    margin-right: 10%;
+}*/
