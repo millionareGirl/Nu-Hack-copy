@@ -14,7 +14,7 @@ body{
 	font-family: Open Sans;
 	font-size: 25px;
 	color: black;
-	background-color: #eeeeee;
+	background-color: #eeeeee; /*greyish-white*/
 	text-align: left;
 }
 
@@ -46,8 +46,8 @@ body{
     font-size: 40px;
     padding: 16px 24px;
     margin: auto;
-    background-color: #28A3E0;
-    color: #F5FBFC;
+    background-color: #28A3E0; /*light-blue*/
+    color: #F5FBFC; /*bluish-white*/
     padding: 10px;
     margin-top: 30px;
 }
@@ -55,7 +55,7 @@ body{
 #wraper{
 	margin-left: 40px;
 	margin-right: 40px;
-	background-color: #F9F9F9;
+	background-color: #F9F9F9; /*white*/
 	padding: 10px;
 	margin-top: 30px;
 	align-items: center;
@@ -65,7 +65,7 @@ table{
 	table-layout: fixed;
 	width: 800px;
 	text-align: center;
-	border: 1px solid #ABACAC;
+	border: 1px solid #ABACAC; /*grey*/
 	border-collapse: collapse;
     border-spacing: 0;
 }
@@ -73,25 +73,25 @@ td{
 	font-family: 'Open Sans', sans-serif;
 	text-align : left;
 	text-align-last: right;
-	border: 1px solid #ABACAC;
+	border: 1px solid #ABACAC; /*grey*/
 }
 th{
 	text-align: center;
-	background-color: #28A3E0;
-	color: #F5FBFC;
+	background-color: #28A3E0; /*light-blue*/
+	color: #F5FBFC; /*bluish-white*/
 }
 
 h2 {
-    color: #F5F8FA;
-    background-color: #2D3236;
+    color: #F5FBFC; /*bluish-white*/
+    background-color: #2D3236; /*dark-grey*/
     font-weight: bold;
     margin: 5px;
     padding: 5px;
     text-align: left;
 }
 #tasks_header {
-	background-color: #28A3E0;
-	color: #F5FBFC;
+	background-color: #28A3E0; /*light-blue*/
+	color: #F5FBFC; /*bluish-white*/
 	padding: 10px;
 	margin-top: 30px;
 }
@@ -112,8 +112,6 @@ p.about{
 	border: 0px;
 }
 
-/*
-
 #header {
     width: 100%;
     position: -webkit-sticky;
@@ -121,13 +119,13 @@ p.about{
     top: 0;
     height: 56px;
     padding: 0 !important;
-    background: var(--main-black);
+    background: #000000; /*black*/
 }
 
 #header > .Main_Header {
     display: inline;
     font-size: 40px;
-    color: var(--light-gray);
+    color: #ABACAC; /*grey*/
     margin-left: 10%;
 }
 
@@ -137,4 +135,4 @@ p.about{
     padding: 8px 16px;
     font-size: 20px;
     margin-right: 10%;
-}*/
+}
