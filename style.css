@@ -1,17 +1,6 @@
-@font-face {
-    font-family: OpenSans;
-    src: url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700i") format('truetype');
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-style: extra-bold;
-    src: url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Raleway:700i") format('truetype');
-}
-
 body{
-    /*font-family: 'Raleway', sans-serif;*/
-    font-family: Open Sans;
+    font-family: Open Sans !important;
+    color: #222222;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -21,6 +10,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font-size: 100%;
     font: inherit;
     vertical-align: center;
+}
+
+img {
+    margin: 32px;
 }
 
 #container{
@@ -44,28 +37,35 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0 !important;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 #cover .Main_header{
-	font-family: Montserrat;
-    font-weight: bolder;
-	font-style: italic;
+	font-family: Montserrat;	
+    font-style: italic;
     text-align: center;
     font-size: 10vw;
-    padding: 120px;
     color: white;
-    display: block;
+    margin-bottom: 20px;
 }
 
 #cover .reg{
+    font-family: Open Sans;
     font-size: 40px;
     padding: 16px 24px;
     margin: auto;
     background-color: #28A3E0; /*light-blue*/
     color: #F5FBFC; /*bluish-white*/
-    padding: 10px;
-    margin-top: 30px;
+    width: fit-content;
+
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+
+    border: none;
+    border-radius: 5px;
 }
 
 /*-------------- Tab/Header ----------------*/
@@ -77,25 +77,56 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     top: 0;
     height: 56px;
     padding: 0 !important;
-    background: #000000; /*black*/
+    background: #222222; /*black*/
 }
 
-#header .Main_Header {
+#header .main_header {
+    font-family: Montserrat;    
+    font-style: italic;
+    color: #eee;
+
     display: inline;
+    background: none;
     font-size: 40px;
     margin-left: 10%;
 }
 
 #header .reg {
+    display: inline;
     float: right;
+    font-family: Open Sans;
     margin: 6px;
     padding: 8px 16px;
     font-size: 20px;
     margin-right: 10%;
+
+    background-color: #28A3E0; /*light-blue*/
+    color: #F5FBFC; /*bluish-white*/
+    width: fit-content;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+}
+
+#content {
+    width: 80%;
+    background: white;
+    padding: 40px;
+    font-size: 20px;
+}
+
+#content h3 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: none;
+    text-align: center;
+
+    padding: 16px;
+    line-height: 64px;
 }
 
 /*-------------- Info ---------------*/
-
 
 
 /*-------------- Воркшопы ------------------*/
@@ -121,14 +152,6 @@ th{
 	color: #F5FBFC; /*bluish-white*/
 }
 
-h2 {
-    color: #F5FBFC; /*bluish-white*/
-    background-color: #2D3236; /*dark-grey*/
-    font-weight: bold;
-    margin: 5px;
-    padding: 5px;
-    text-align: left;
-}
 
 /*------------------- Задачи ------------------*/
 
@@ -139,13 +162,13 @@ h2 {
 	margin-top: 30px;
 }
 
-h3{
-	font-weight: bold;
-	text-align:center;
-}
-
-p .about{
-	text-align: center;
+h2 {
+    color: #F5FBFC; /*bluish-white*/
+    background-color: #2D3236; /*dark-grey*/
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
 }
 
 /*----------------- Sponsors/Footer --------------------*/
