@@ -10,18 +10,33 @@
 }
 
 body{
-	/*font-family: 'Raleway', sans-serif;*/
-	font-family: Open Sans;
-	font-size: 25px;
-	color: black;
-	background-color: #eeeeee; /*greyish-white*/
-	text-align: left;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: Open Sans;
 }
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 !important;
+    background-color: #eeeeee; /*greyish-white*/
+}
+
+/*-------------- Cover/Welcome page --------------*/
+
 #cover {
-    height: 100vh;
     width: 100%;
-    background-color: black;
+    height: 100vh;
     background-image: url('http://hacknu2018.herokuapp.com/imgs/Header-Recovered.jpg');
     background-position: center top;
     background-size: cover;
@@ -34,6 +49,7 @@ body{
 
 #cover .Main_header{
 	font-family: Montserrat;
+    font-weight: bolder;
 	font-style: italic;
     text-align: center;
     font-size: 10vw;
@@ -42,7 +58,7 @@ body{
     display: block;
 }
 
-#cover.reg{
+#cover .reg{
     font-size: 40px;
     padding: 16px 24px;
     margin: auto;
@@ -52,14 +68,38 @@ body{
     margin-top: 30px;
 }
 
-#wraper{
-	margin-left: 40px;
-	margin-right: 40px;
-	background-color: #F9F9F9; /*white*/
-	padding: 10px;
-	margin-top: 30px;
-	align-items: center;
+/*-------------- Tab/Header ----------------*/
+
+#header {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 56px;
+    padding: 0 !important;
+    background: #000000; /*black*/
 }
+
+#header .Main_Header {
+    display: inline;
+    font-size: 40px;
+    margin-left: 10%;
+}
+
+#header .reg {
+    float: right;
+    margin: 6px;
+    padding: 8px 16px;
+    font-size: 20px;
+    margin-right: 10%;
+}
+
+/*-------------- Info ---------------*/
+
+
+
+/*-------------- Воркшопы ------------------*/
+/*--------------- Расписание ----------------*/
 
 table{
 	table-layout: fixed;
@@ -89,6 +129,9 @@ h2 {
     padding: 5px;
     text-align: left;
 }
+
+/*------------------- Задачи ------------------*/
+
 #tasks_header {
 	background-color: #28A3E0; /*light-blue*/
 	color: #F5FBFC; /*bluish-white*/
@@ -100,39 +143,16 @@ h3{
 	font-weight: bold;
 	text-align:center;
 }
-#O_nas{
-	text-align: left;
+
+p .about{
+	text-align: center;
 }
-p.about{
-	text-align: left;
-}
+
+/*----------------- Sponsors/Footer --------------------*/
+
 #contacts{
 	table-layout: none;
 	text-align: left;
 	border: 0px;
 }
 
-#header {
-    width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 56px;
-    padding: 0 !important;
-    background: #000000; /*black*/
-}
-
-#header > .Main_Header {
-    display: inline;
-    font-size: 40px;
-    color: #ABACAC; /*grey*/
-    margin-left: 10%;
-}
-
-#header > .reg {
-    float: right;
-    margin: 6px;
-    padding: 8px 16px;
-    font-size: 20px;
-    margin-right: 10%;
-}
