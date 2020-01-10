@@ -132,43 +132,95 @@ img {
 /*-------------- Воркшопы ------------------*/
 /*--------------- Расписание ----------------*/
 
+#workshops, #timing {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tbl table tr:nth-child(2n-1) {
+    background-color: #eee;
+}
+
 table{
 	table-layout: fixed;
-	width: 800px;
-	text-align: center;
+	width: 650px;
 	border: 1px solid #ABACAC; /*grey*/
 	border-collapse: collapse;
     border-spacing: 0;
-}
-td{
-	font-family: 'Open Sans', sans-serif;
-	text-align : left;
-	text-align-last: right;
-	border: 1px solid #ABACAC; /*grey*/
-}
-th{
-	text-align: center;
-	background-color: #28A3E0; /*light-blue*/
-	color: #F5FBFC; /*bluish-white*/
+    margin-top: 12px;
 }
 
+td{
+	font-family: Open Sans;
+	border: 1px solid #ddd; /*grey*/
+    padding: 8px;
+}
+
+th{
+	text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+	background-color: #28A3E0; /*light-blue*/
+	color: #F5FBFC; /*bluish-white*/
+    padding: 14px;
+    border: 1px solid #ddd; /*grey*/
+}
+
+.tbl table td:nth-child(2) {
+    text-align: right;
+    width: 40%;
+}
 
 /*------------------- Задачи ------------------*/
 
+
 #tasks_header {
-	background-color: #28A3E0; /*light-blue*/
-	color: #F5FBFC; /*bluish-white*/
-	padding: 10px;
-	margin-top: 30px;
+    display: block;
+    background-color: #28A3E0; /*light-blue*/
+    color: #F5FBFC; /*bluish-white*/
+    padding: 30px;
+    margin: 0 -40px;
+    margin-top: 80px;
 }
 
-h2 {
+.sponsors_tasks {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.Tasks {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.pr {
+    display: none;
+}
+
+.pr:checked + label{
+    background-color: #28A3E0; /*light-blue*/
     color: #F5FBFC; /*bluish-white*/
-    background-color: #2D3236; /*dark-grey*/
-    font-weight: bold;
-    margin: 5px;
-    padding: 5px;
-    text-align: left;
+}
+
+.pr + label {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 8px 16px;
+    font-family: Montserrat;
+}
+
+.pr_content {
+    padding: 16px;
+    background-color: #eee;
+    border: 2px solid #ddd; /*grey*/
+}
+
+.prize {
+    margin: 10px auto;
 }
 
 /*----------------- Sponsors/Footer --------------------*/
