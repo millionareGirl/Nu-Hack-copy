@@ -194,7 +194,7 @@ th{
 
 .Tasks {
     width: 100%;
-    margin: 32px 0;
+    margin: 32px 0 16px 0;
 }
 
 .pr {
@@ -212,7 +212,7 @@ th{
     padding: 8px 16px;
     font-family: Montserrat;
 
-    margin: 0px -5px 0px 0px;
+    margin: 0px -6px 0px 0px;
 }
 
 .pr_content {
@@ -272,30 +272,41 @@ ol {
 }
 
 .footer_content {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 #contacts{
-	table-layout: none;
-	text-align: left;
-	border: 0px;
-	width: 30%;
+    table-layout: none;
+    text-align: left;
+    border: 0px;
+    width: 30%;
 
-	margin: 
+    margin: 
+}
+
+.footer_row {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    margin: 9px 25px 0px 25px;
+}
+
+.footer_row h6 {
+    width: 230px;
 }
 
 .footer_content h6, .creators {
-	font-family: Montserrat;
-	font-size: 16px;
-	font-weight: normal;
-	color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
 
-	padding: 10px;
+    padding: 10px;
 }
 
 .footer_content img {
-	width: 30px;
-	height: 30px;
-	margin: 0px auto 10px auto 0px;
+    display: inline-block;
+    margin: 0px 5px;
 }
